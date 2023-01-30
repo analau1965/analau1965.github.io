@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <title>Proyecto CV</title>
+</head>
+<body>
+    <header>
+        <div class="nombre">
+            <h1>ANA LAURA MARTORANO</h1>
+            <h2>Lic. en Analisis de Sistemas</h2>
+        </div>
+        <div class="foto">
+            <img src="Imagenes/foto.jpg" alt="foto" width="150">
+        </div>
+    </header>
+    <main class="main">
+        <nav class="menu">
+          <ul>
+            <li> <a href="index.html"> Datos Personales</a></li>
+            <li> <a href="estudios.html"> Estudios</a></li>
+            <li> <a class="active" href="experiencia.html"> Experiencia Laboral</a></li>
+            <li> <a href="conocimientos.html"> Conocimientos</a></li>
+          </ul>
+        </nav>
+
+        <section class="contenido" >
+            <h2>Aerolíneas Argentinas</h2>  
+            <div class="periodo">
+                <p>Analista de aplicacines del área de Sistemas Contables e Ingresos de la Compañia.</p>
+                <p>Periodo: 2013 a la Actualidad</p>
+            </div>
+        
+            <h2>Laboratorios Phoenix SAICyF </h2>
+            <div class="periodo">
+                <p>Analista funcional y soporte de Programación independiente
+                    de los sistemas de Stocks, Ventas y Producción</p>
+                <p> Periodo: 2007 a 2013</p>
+            </div>
+            
+            <h2>ALT Consultores SA  </h2>
+            <div class="periodo">
+                <p>Analista Funcional asignada a los clienes de la consultora</p>
+                <p>Periodo:	2004 a 2008</p>
+            </div>
+
+            <h2>Organización y Gestion SRL  </h2>
+            <div class="periodo">
+                <p>Analista Funcional asignada a los clienes de la consultora</p>
+                <p>Periodo:	1992 a 2003</p>
+            </div>
+
+            <div class="calcularAños">
+                <h3>Cantidad total de años trabajados: </h3>
+                <button id="años" onclick="document.getElementById('años').innerHTML = calcular()">Calcular</button>
+            </div>
+                          
+        </section>
+    </main>
+
+<!-- Script Java de calculo años trabajados  -->
+
+    <script>
+        function calcular()
+        { 
+          var desde   = 1992;
+          const fecha = new Date();
+          var hasta   = fecha.getFullYear()
+     
+          var diferencia = hasta - desde;
+          return diferencia
+        }               
+    </script>
+
+</body>
+</html>

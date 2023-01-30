@@ -1,0 +1,125 @@
+
+* {
+   box-sizing: border-box;
+ }
+
+img {
+   max-width: 100%;
+ }
+
+body
+  { 
+   margin: 0 auto;
+   font-family: Arial;
+  }
+
+ /* Encabezado */
+
+.nombre {
+  width: 85%;
+  float: left;
+  background-color: #9933cc;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin: 0;
+} 
+
+.foto {
+  width: 15%;
+  display: inline;
+}   
+
+  /* Estructura Pagina */
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-items: left;
+  justify-content: left;
+}
+
+.menu {
+  width: 20%;
+  float: left;
+}
+.contenido {
+  width: 80%;
+  padding: 0;
+  margin-top: 0;
+  padding-top: 16px;
+  padding-left: 15px;
+  line-height: 1;
+  float: left;
+}
+  
+ /* Menu navegacion Principal */
+
+.menu ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: gainsboro;
+  position: fixed;
+  height: 80%;
+  overflow: auto;
+ }
+.menu li a {
+  display: block;
+  color: #000;
+  padding-top: 17px;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  block-size: 45px;  
+}
+.menu li a.active {
+  background-color: #9933cc;
+  color: white;
+}
+.menu li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+ 
+/* Contenidos de cada seccion */
+
+.contenido h2 {
+  font-size: 20px; 
+}
+
+.contenido p {
+  font-size: 20px; 
+}
+
+.contenido ul {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+ .periodo p {
+  font-size: 16px; 
+  padding-left: 15px;
+  line-height: 1;
+}
+
+ .calcularAños {
+  display: inline-flex;
+  font-size: 16px; 
+  line-height: 0.8;
+ }
+
+ #años {
+  display: inline-block;
+  justify-content: end;
+  width: 100px;
+  height: 35px;
+  margin-left: 50px;
+  background-color: #9933cc;
+  color:white;
+  font-size:20px ;
+ }
+
+ 
